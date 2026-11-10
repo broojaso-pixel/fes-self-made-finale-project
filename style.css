@@ -1009,6 +1009,10 @@ footer {
     max-width: 430px;
     gap: 28px;
   }
+  /* HIDE PRICING DECORATIVE BLOB ON MOBILE */
+  .plans__blob {
+    display: none;
+  }
   .plan--business {
     transform: none;
   }
@@ -1019,6 +1023,7 @@ footer {
     flex-direction: column;
     text-align: center;
   }
+  
 }
 @media (max-width: 640px) {
   .header__description h1 {
@@ -1082,6 +1087,28 @@ footer {
     flex-direction: column;
     gap: 22px;
     text-align: center;
+  }
+    /* MAKE IMAGES RESPONSIVE ON MOBILE */
+  img {
+    width: 100%;
+  }
+
+  /* KEEP SMALL IMAGES AT THEIR ORIGINAL SIZES */
+  .nav__logo--img {
+    width: 40px;
+  }
+
+  .feature__img {
+    width: 40px;
+  }
+
+  .testimonial__img {
+    width: 54px;
+    height: 54px;
+  }
+
+  .footer__logo--img {
+    width: 30px;
   }
 }
 ul {
